@@ -1,17 +1,15 @@
-import waterOne from '../quest-list.js';
+import waterQuests from '../quest-list.js';
 const json = window.localStorage.getItem('player');
 const player = JSON.parse(json);
 
 const questDescription = document.getElementById('quest-description');
 const questOptions = document.getElementById('quest-options');
 
-
-
 const descriptionP = document.createElement('p');
-descriptionP.textContent = waterOne.questDescription;
+descriptionP.textContent = waterQuests[0].questDescription;
 questDescription.appendChild(descriptionP);
 
-for(let i = 0; i < waterOne.questChoices.length; i++) {
+for(let i = 0; i < waterQuests[0].questChoices.length; i++) {
     const choiceLabel = document.createElement('label');
     const choiceInput = document.createElement('input');
 
@@ -21,7 +19,7 @@ for(let i = 0; i < waterOne.questChoices.length; i++) {
     choiceInput.required = true;
 
     questOptions.appendChild(choiceLabel);
-    choiceLabel.textContent = waterOne.questChoices[i].choiceDescription;
+    choiceLabel.textContent = waterQuests[0].questChoices[i].choiceDescription;
     choiceLabel.appendChild(choiceInput);
 }
 const button = document.createElement('button');
@@ -35,11 +33,11 @@ questOptions.addEventListener('submit', function(event) {
     const questOptionsFormData = new FormData(questOptions);
     const chosen = questOptionsFormData.get('options');
 
-    player.score += waterOne.questChoices[chosen].choicePoints;
+    player.score += waterQuests[0].questChoices[chosen].choicePoints;
     const json = JSON.stringify(player);
     window.localStorage.setItem('player', json);
 
-    descriptionP.textContent = waterOne.questChoices[chosen].choiceResult;
+    descriptionP.textContent = waterQuests[0].questChoices[chosen].choiceResult;
     questOptions.remove();
 
 });
