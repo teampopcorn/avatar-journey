@@ -6,7 +6,8 @@ playerForm.addEventListener('submit', function(event) {
 
     const player = {
         name: playerFormData.get('name'),
-        element: playerFormData.get('element')
+        element: playerFormData.get('element'),
+        score: 0
     };
 
     const json = JSON.stringify(player);

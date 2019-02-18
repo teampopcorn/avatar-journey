@@ -1,6 +1,11 @@
 import waterOne from '../quest-list.js';
+const json = window.localStorage.getItem('player');
+const player = JSON.parse(json);
+
 const questDescription = document.getElementById('quest-description');
 const questOptions = document.getElementById('quest-options');
+
+
 
 const descriptionP = document.createElement('p');
 descriptionP.textContent = waterOne.questDescription;
@@ -30,6 +35,11 @@ questOptions.addEventListener('submit', function(event) {
     const questOptionsFormData = new FormData(questOptions);
     const chosen = questOptionsFormData.get('options');
 
+    player.score += waterOne.questChoices[chosen].choicePoints;
+    const json = JSON.stringify(player);
+    window.localStorage.setItem('player', json);
+
     descriptionP.textContent = waterOne.questChoices[chosen].choiceResult;
+    questOptions.remove();
 
 });
