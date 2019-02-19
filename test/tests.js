@@ -1,38 +1,32 @@
 const test = QUnit.test;
 
-let scorecard = null;
-
-function addScore(choice, scorecard) {
-    if(choice === 'option 1') {
-        scorecard.score += 3;
-    }
-    if(choice === 'option 2') {
-        scorecard.score += 1;
+function tally(score) {
+    if(score > 21) {
+        return 'good';
+    } else if(score > 15) {
+        return 'okay';
+    } else {
+        return 'bad';
     }
 }
 
-QUnit.testStart(function() {
-    scorecard = { score: 0 };
+
+QUnit.module('tally scores');
+
+test('when score greater than 21 then return good', function(assert) {
+    const score = 24;
+    const result = tally(score);
+    assert.equal(result, 'good');
 });
-
-QUnit.module('Adding scores');
-
-test('when option 1 is chosen score increased by 3', function(assert) {
-    //Arrange
-    const good = 'option 1';
-    //Act
-    addScore(good, scorecard);
-    //Assert
-    assert.deepEqual(scorecard, { score: 3 });
+test('when score greater than 15 then return okay', function(assert) {
+    const score = 16;
+    const result = tally(score);
+    assert.equal(result, 'okay');
 });
-
-test('when option 2 is chosen score increased by 1', function(assert) {
-    //Arrange
-    const good = 'option 2';
-    //Act
-    addScore(good, scorecard);
-    //Assert
-    assert.deepEqual(scorecard, { score: 1 });
+test('when score lower than 16 then return bad', function(assert) {
+    const score = 1;
+    const result = tally(score);
+    assert.equal(result, 'bad');
 });
 
 

@@ -13,9 +13,11 @@ playerForm.addEventListener('submit', function(event) {
         score: 0,
         incompleteQuests: {
             waterQuests: ['water one', 'water two', 'water three'],
-            earthQuests: ['earth one', 'earth two', 'earth three']
+            earthQuests: ['earth one', 'earth two', 'earth three'],
+            fireQuests: ['fire one', 'fire two', 'fire three'],
+            airQuests: ['air one', 'air two', 'air three']
         },
-        element: ['water', 'earth']
+        element: ['water'] //, 'earth','fire']
     };
 
     // stores player object within localStorage

@@ -67,12 +67,21 @@ questOptions.addEventListener('submit', function(event) {
             player.incompleteQuests[elementToFind + 'Quests'].splice(i, 1);
         }
     }
+
+    // removes current/completed element from player.element if quests are completed
     if(player.incompleteQuests[elementToFind + 'Quests'].length === 0) {
         player.element.shift();
         elementToFind = player.element[0];
     }
 
     mapLink.href = 'map.html?element=' + elementToFind;
+    
+    // Check if elements array is empty > then go to results.html
+    if(player.element.length === 0) {
+        mapLink.href = 'results.html';
+        mapLink.textContent = 'See Results';
+    }
+
 
     // update player score in store it in local Storage
     player.score += currentQuest.questChoices[chosen].choicePoints;
