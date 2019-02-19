@@ -1,16 +1,28 @@
-import waterQuests from '../quest-list.js';
-console.log(waterQuests);
+// import allQuests from '../quest-list.js';
+
+// pulls player object from localStorage
 const json = window.localStorage.getItem('player');
 const player = JSON.parse(json);
 
+// Look at URL for element
+const search = window.location.search;
+const searchParams = new URLSearchParams(search);
+const elementToFind = searchParams.get('element');
+
 const questLinks = document.getElementById('quest-links');
 
+// Loops through incompleteQuests and displays them on map page
+for(let i = 0; i < player.incompleteQuests[elementToFind + 'Quests'].length; i++) {
 
-
-for(let i = 0; i < player.incompleteQuests.waterQuests.length; i++) {
+    // creates anchor tag
     const questAnchor = document.createElement('a');
-    questAnchor.href = 'quest.html?quest=' + encodeURIComponent(player.incompleteQuests.waterQuests[i]);
-    questAnchor.textContent = player.incompleteQuests.waterQuests[i];
+
+    // sets url for anchor tag
+    questAnchor.href = 'quest.html?quest=' + encodeURIComponent(player.incompleteQuests[elementToFind + 'Quests'][i]) + '&element=' + elementToFind;
     
+    // sets text content for anchor tag
+    questAnchor.textContent = player.incompleteQuests[elementToFind + 'Quests'][i];
+    
+    // Appends anchor tag to DOM
     questLinks.appendChild(questAnchor);
 }
