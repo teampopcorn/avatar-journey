@@ -36,6 +36,25 @@ const waterTwo = {
     ]
 };
 
-const waterQuests = [waterOne, waterTwo];
+const waterThree = {
+    questTitle: 'water three',
+    questDescription: 'You bend water?',
+    questChoices: [
+        {
+            choiceName: 'option 1',
+            choiceDescription: 'Good',
+            choicePoints: 3,
+            choiceResult: 'Yes'
+        },
+        {
+            choiceName: 'option 2',
+            choiceDescription: 'Bad',
+            choicePoints: 1,
+            choiceResult: 'No'
+        }
+    ]
+};
+
+const waterQuests = [waterOne, waterTwo, waterThree];
 
 export default waterQuests;

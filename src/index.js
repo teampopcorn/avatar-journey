@@ -7,7 +7,10 @@ playerForm.addEventListener('submit', function(event) {
     const player = {
         name: playerFormData.get('name'),
         element: playerFormData.get('element'),
-        score: 0
+        score: 0,
+        incompleteQuests: {
+            waterQuests: ['water one', 'water two', 'water three']
+        }
     };
 
     const json = JSON.stringify(player);

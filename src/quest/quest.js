@@ -5,11 +5,25 @@ const player = JSON.parse(json);
 const questDescription = document.getElementById('quest-description');
 const questOptions = document.getElementById('quest-options');
 
+const searchURL = window.location.search;
+const searchParams = new URLSearchParams(searchURL);
+const questTitleToFind = searchParams.get('quest');
+let currentQuest = null;
+
+for(let i = 0; i < waterQuests.length; i++) {
+    const questTitle = waterQuests[i].questTitle;
+    if(questTitle === questTitleToFind) {
+        currentQuest = waterQuests[i];
+        break;
+    }
+}
+
+
 const descriptionP = document.createElement('p');
-descriptionP.textContent = waterQuests[0].questDescription;
+descriptionP.textContent = currentQuest.questDescription;
 questDescription.appendChild(descriptionP);
 
-for(let i = 0; i < waterQuests[0].questChoices.length; i++) {
+for(let i = 0; i < currentQuest.questChoices.length; i++) {
     const choiceLabel = document.createElement('label');
     const choiceInput = document.createElement('input');
 
@@ -19,7 +33,7 @@ for(let i = 0; i < waterQuests[0].questChoices.length; i++) {
     choiceInput.required = true;
 
     questOptions.appendChild(choiceLabel);
-    choiceLabel.textContent = waterQuests[0].questChoices[i].choiceDescription;
+    choiceLabel.textContent = currentQuest.questChoices[i].choiceDescription;
     choiceLabel.appendChild(choiceInput);
 }
 const button = document.createElement('button');
@@ -33,11 +47,11 @@ questOptions.addEventListener('submit', function(event) {
     const questOptionsFormData = new FormData(questOptions);
     const chosen = questOptionsFormData.get('options');
 
-    player.score += waterQuests[0].questChoices[chosen].choicePoints;
+    player.score += currentQuest.questChoices[chosen].choicePoints;
     const json = JSON.stringify(player);
     window.localStorage.setItem('player', json);
 
-    descriptionP.textContent = waterQuests[0].questChoices[chosen].choiceResult;
+    descriptionP.textContent = currentQuest.questChoices[chosen].choiceResult;
     questOptions.remove();
 
 });
