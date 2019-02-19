@@ -14,6 +14,7 @@ for(let i = 0; i < waterQuests.length; i++) {
     const questTitle = waterQuests[i].questTitle;
     if(questTitle === questTitleToFind) {
         currentQuest = waterQuests[i];
+        player.incompleteQuests.waterQuests.splice(i, 1);
         break;
     }
 }
