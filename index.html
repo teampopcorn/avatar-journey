@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./index.css">
     <title>Avatar Journey</title>
 </head>
 <body>
@@ -10,27 +11,27 @@
         <h1>Avatar Journey</h1>
     </header>
     <main>
+        <p>What is your name, Avatar?</p>
         <form id="player-form">
             <label>
-                Name: 
                 <input type="text" name="name" placeholder="Enter Name Here">
             </label>
-            <fieldset>
+            <fieldset id="container">
                 <legend>Choose your starting element</legend>
                 <label>
-                    <input type="radio" name="element" value="air" required>
+                    <input type="radio" name="element"  class="elements" value="air" required>
                     <img src="assets/air-icon.png" alt="air icon">
                 </label>
                 <label>
-                    <input type="radio" name="element" value="water" required>
+                    <input type="radio" name="element" class="elements" value="water" required>
                     <img src="assets/water-icon.png" alt="water icon">
                 </label>
                 <label>
-                    <input type="radio" name="element" value="earth" required>
+                    <input type="radio" name="element" class="elements" value="earth" required>
                     <img src="assets/earth-icon.png" alt="earth icon">
                 </label>
                 <label>
-                    <input type="radio" name="element" value="fire" required>
+                    <input type="radio" name="element" class="elements" value="fire" required>
                     <img src="assets/fire-icon.png" alt="fire icon">
                 </label>
             </fieldset>

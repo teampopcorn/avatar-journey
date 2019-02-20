@@ -1,0 +1,62 @@
+/* black -> green #373331  #605a56 #80ac7b #e8eaa1*/
+@font-face {
+    font-family: Herculanum;
+    src: url('./assets/herculanum.ttf');
+}
+body {
+    text-align: center;
+    background-color:  #373331; 
+    color: wheat;
+    font-size: 30px;
+    font-family: Herculanum;
+}
+h1 {
+    font-family: Herculanum, sans-serif;
+    color: wheat;
+    font-size: 75px;
+    border: 6px outset wheat;
+    /* background: rgba(0,0,0, .5); */
+    text-shadow: 1px 2px 1px #80ac7b;
+    padding: 10px;
+}
+button {
+    border: 2px outset wheat;
+    font-size: 20px;
+    padding: 0.5rem;
+    font-family: Herculanum, sans-serif;
+    background: rgb(0,0,0,0);
+    color: wheat;
+    transition: background .6s linear;
+    transition: color .6s linear;
+
+}
+button:hover {
+    background: wheat;
+    color: #373331;
+}
+
+#player-form {
+    margin: 2rem;
+    padding: 1rem;
+}
+#container {
+    text-align: center;
+    border: 6px outset wheat;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+legend {
+    color: wheat;    
+    display: inline-block;
+    padding: .5rem;
+    font-size: 25px;
+    font-family: herculanum;
+    border: 2px outset wheat;
+}
+
+.elements {
+    visibility: hidden;
+    display: block;
+    position: absolute;
+}
+
