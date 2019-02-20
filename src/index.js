@@ -9,7 +9,7 @@ playerForm.addEventListener('submit', function(event) {
     // creates player object
     const player = {
         name: playerFormData.get('name'),
-        element: playerFormData.get('element'),
+        masteredElements:[playerFormData.get('element')],
         score: 0,
         incompleteQuests: {
             waterQuests: ['water one', 'water two', 'water three'],
@@ -17,7 +17,7 @@ playerForm.addEventListener('submit', function(event) {
             fireQuests: ['fire one', 'fire two', 'fire three'],
             airQuests: ['air one', 'air two', 'air three']
         },
-        element: ['water'] //, 'earth','fire']
+        element: makeCycle(playerFormData.get('element'))
     };
 
     // stores player object within localStorage
@@ -25,3 +25,17 @@ playerForm.addEventListener('submit', function(event) {
     window.localStorage.setItem('player', json);
     window.location = 'map.html?element=' + player.element[0];
 });
+
+// When element is chosen function returns remaining elements
+function makeCycle(startElement) {
+    switch(startElement) {
+        case 'air': 
+            return ['water', 'earth', 'fire'];
+        case 'water':
+            return ['earth', 'fire', 'air'];
+        case 'earth':
+            return ['fire', 'air', 'water'];
+        case 'fire':
+            return ['air', 'water', 'earth'];
+    }
+}

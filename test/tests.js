@@ -1,33 +1,45 @@
+import './tally/tally.test.js';
 const test = QUnit.test;
 
-function tally(score) {
-    if(score > 21) {
-        return 'good';
-    } else if(score > 15) {
-        return 'okay';
-    } else {
-        return 'bad';
+function makeCycle(startElement) {
+    switch(startElement) {
+        case 'air': 
+            return ['water', 'earth', 'fire'];
+        case 'water':
+            return ['earth', 'fire', 'air'];
+        case 'earth':
+            return ['fire', 'air', 'water'];
+        case 'fire':
+            return ['air', 'water', 'earth'];
     }
 }
 
+QUnit.module('creating a cycle test');
 
-QUnit.module('tally scores');
+test('when air is chosen return array [W, E, F]', function(assert) {
+    const expected = ['water', 'earth', 'fire'];
+    const result = makeCycle('air');
+    assert.deepEqual(result, expected);
+});
 
-test('when score greater than 21 then return good', function(assert) {
-    const score = 24;
-    const result = tally(score);
-    assert.equal(result, 'good');
+test('when water is chosen return array [E, F, A]', function(assert) {
+    const expected = ['earth', 'fire', 'air'];
+    const result = makeCycle('water');
+    assert.deepEqual(result, expected);
 });
-test('when score greater than 15 then return okay', function(assert) {
-    const score = 16;
-    const result = tally(score);
-    assert.equal(result, 'okay');
+
+test('when earth is chosen return array [F, A, W]', function(assert) {
+    const expected = ['fire', 'air', 'water'];
+    const result = makeCycle('earth');
+    assert.deepEqual(result, expected);
 });
-test('when score lower than 16 then return bad', function(assert) {
-    const score = 1;
-    const result = tally(score);
-    assert.equal(result, 'bad');
+
+test('when fire is chosen return array [A, W, E]', function(assert) {
+    const expected = ['air', 'water', 'earth'];
+    const result = makeCycle('fire');
+    assert.deepEqual(result, expected);
 });
+
 
 
 

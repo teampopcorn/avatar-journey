@@ -70,7 +70,8 @@ questOptions.addEventListener('submit', function(event) {
 
     // removes current/completed element from player.element if quests are completed
     if(player.incompleteQuests[elementToFind + 'Quests'].length === 0) {
-        player.element.shift();
+        const mastered = player.element.shift();
+        player.masteredElements.push(mastered);
         elementToFind = player.element[0];
     }
 
