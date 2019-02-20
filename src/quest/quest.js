@@ -1,8 +1,11 @@
-import allQuests from '../quest-list.js';
+import allQuests from '../js-assets/quest-list.js';
+import userDisplay from '../js-assets/user-display.js';
 
 // Get player object from localStorage
 const json = window.localStorage.getItem('player');
 const player = JSON.parse(json);
+
+userDisplay(player);
 
 const questDescription = document.getElementById('quest-description');
 const questOptions = document.getElementById('quest-options');

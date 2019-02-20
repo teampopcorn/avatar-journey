@@ -1,5 +1,4 @@
-// import allQuests from '../quest-list.js';
-
+import userDisplay from '../js-assets/user-display.js';
 // pulls player object from localStorage
 const json = window.localStorage.getItem('player');
 const player = JSON.parse(json);
@@ -10,6 +9,8 @@ const searchParams = new URLSearchParams(search);
 const elementToFind = searchParams.get('element');
 
 const questLinks = document.getElementById('quest-links');
+
+userDisplay(player);
 
 // Loops through incompleteQuests and displays them on map page
 for(let i = 0; i < player.incompleteQuests[elementToFind + 'Quests'].length; i++) {
@@ -26,3 +27,4 @@ for(let i = 0; i < player.incompleteQuests[elementToFind + 'Quests'].length; i++
     // Appends anchor tag to DOM
     questLinks.appendChild(questAnchor);
 }
+

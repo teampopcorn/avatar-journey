@@ -1,6 +1,9 @@
+import userDisplay from '../js-assets/user-display.js';
 const json = window.localStorage.getItem('player');
 const player = JSON.parse(json);
 const resultSection = document.getElementById('results');
+
+userDisplay(player);
 
 function tally(score) {
     if(score > 21) {
