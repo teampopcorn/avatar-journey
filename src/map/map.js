@@ -8,6 +8,8 @@ const search = window.location.search;
 const searchParams = new URLSearchParams(search);
 const elementToFind = searchParams.get('element');
 
+const mapElement = document.getElementById('map-element');
+mapElement.href = './src/elements-css/' + elementToFind + '.css';
 const questLinks = document.getElementById('quest-links');
 
 userDisplay(player);

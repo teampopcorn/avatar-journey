@@ -17,7 +17,8 @@ const searchParams = new URLSearchParams(searchURL);
 const questTitleToFind = searchParams.get('quest');
 let elementToFind = searchParams.get('element');
 
-
+const mapElement = document.getElementById('quest-element');
+mapElement.href = './src/elements-css/' + elementToFind + '.css';
 
 // Setting current quest and creating for loop
 let currentQuest = null;
