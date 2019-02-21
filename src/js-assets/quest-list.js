@@ -267,12 +267,13 @@ const airThree = {
 
 
 const earthQuests = [earthOne, earthTwo, earthThree];
+const waterIntro = 'Welcome, young Avatar, to the Southern Water Tribe. I\'m Master Tommy, and I will guide through your water bending training as your make your journey to become a full fledged Avatar. In order to master water bending, you must have an open mind, for water is the element of change. You must be adaptable, flexible, and versatile. Water bending does not rely on strength or power like earth bendiing or fire bending. In your water bending training you will learn to take your opponents strength and turn it back against them.';
 const waterQuests = [waterOne, waterTwo, waterThree];
 const fireQuests = [fireOne, fireTwo, fireThree];
 const airQuests = [airOne, airTwo, airThree];
 
 const allQuests = {
-    waterQuests: waterQuests,
+    waterQuests: [waterIntro, waterQuests],
     earthQuests: earthQuests,
     fireQuests: fireQuests,
     airQuests: airQuests
