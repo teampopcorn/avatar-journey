@@ -1,3 +1,7 @@
-body {
-  background: forestgreen;
+html {
+  background: url('../../assets/ba-sing-se.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }

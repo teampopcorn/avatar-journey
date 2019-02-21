@@ -6,6 +6,14 @@
   margin: 0;
   padding: 0;
 }
+html {
+  background: url('./assets/avatar11.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+ }
+ 
 body {
   text-align: center;
   background-color:  #373331; 

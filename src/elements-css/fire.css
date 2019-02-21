@@ -1,3 +1,7 @@
-body {
-  background: orangered;
+html {
+  background: url('../../assets/fire-school.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }

@@ -3,19 +3,34 @@
     font-family: Herculanum;
     src: url('./assets/herculanum.ttf');
 }
+html {
+    background: url('./assets/avatar10.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+   }
+#wrap-box {
+    display: grid;
+    justify-content: center;
+    border: 5px outset wheat;
+    padding-bottom: 20%;
+    background: rgba(55,51,49,0.3);
+}
 body {
     text-align: center;
-    background-color:  #373331; 
+    /* background-color:  #373331;  */
     color: wheat;
     font-size: 30px;
     font-family: Herculanum;
+
 }
 h1 {
     font-family: Herculanum, sans-serif;
     color: wheat;
     font-size: 75px;
     border: 6px outset wheat;
-    /* background: rgba(0,0,0, .5); */
+    background: rgba(55,51,49,0.75);
     text-shadow: 1px 2px 1px #80ac7b;
     padding: 10px;
 }
@@ -24,7 +39,7 @@ button {
     font-size: 20px;
     padding: 0.5rem;
     font-family: Herculanum, sans-serif;
-    background: rgb(0,0,0,0);
+    background: rgb(0,0,0,0.5);
     color: wheat;
     transition: background .3s linear;
     transition: color .6s linear;
@@ -49,6 +64,7 @@ button:hover {
     text-align: center;
     margin: 30px 250px; 
     padding: 20px;
+    background: rgba(55,51,49,0.75);
 }
 .air {
     grid-column-start: 1;
@@ -72,6 +88,7 @@ legend {
     font-size: 25px;
     font-family: herculanum;
     border: 2px outset wheat;
+    background : rgba(0,0,0,.5);
 }
 
 .radios {

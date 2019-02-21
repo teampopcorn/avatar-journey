@@ -1,3 +1,9 @@
-body {
-  background: darkblue;
+
+
+html {
+  background: url('../../assets/water-village.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
