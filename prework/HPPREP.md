@@ -8,7 +8,7 @@ Jumping into the air from very high places has always been a thing for Heather .
 ***
 ### Air Nomad Introduction
 
-I am *--word for mentor--* Heather. I am a member of the Order of the White Lotus and its most senior warrior. I will be your airbending mentor guiding you through a series of quests that will determine your level of mastery with airbending. Air is the element of freedom and the key to unlocking its potential is flexibility. To master airbending one must be adept at being aware of flow. Finding and following the path of least resistance is critical. Air Nomads are first and foremost pacifists and almost purely defensive. We only use our abilities to harm as an absolute last resort. Perceiving, reasoning and flexibility are core skills you will need to complete your training.
+I am Monk Heather. I am a member of the Order of the White Lotus and its most senior warrior. I will be your airbending mentor guiding you through a series of quests that will determine your level of mastery with airbending. Air is the element of freedom and the key to unlocking its potential is flexibility. To master airbending one must be adept at being aware of flow. Finding and following the path of least resistance is critical. Air Nomads are first and foremost pacifists and almost purely defensive. We only use our abilities to harm as an absolute last resort. Perceiving, reasoning and flexibility are core skills you will need to complete your training.
 
 Air Nomad Attributes
 * Pacifism

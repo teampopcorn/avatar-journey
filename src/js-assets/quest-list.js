@@ -266,16 +266,23 @@ const airThree = {
 };
 
 
-const earthQuests = [earthOne, earthTwo, earthThree];
 const waterIntro = 'Welcome, young Avatar, to the Southern Water Tribe. I\'m Master Tommy, and I will guide through your water bending training as your make your journey to become a full fledged Avatar. In order to master water bending, you must have an open mind, for water is the element of change. You must be adaptable, flexible, and versatile. Water bending does not rely on strength or power like earth bendiing or fire bending. In your water bending training you will learn to take your opponents strength and turn it back against them.';
+
+const earthIntro = 'Welcome to Earth Kingdom where you will put through a  gruesome training, to master the art of earth bending, I am the ruler of Ba Sing Se. My people can be very stubborn and strong-willed, but the the heart of gold and will take good care if you pass your training, there is a lot of different types of culture, so you’re sure to fit in and great food. From this point forward I\'ll be you trainer and will guide you through your journey, you are in good hands!';
+
+const fireIntro = 'Greetings, and welcome to the Fire Nation young Avatar. I am ___ Marty, Chi scholar and personal attendant to Fire Lord Ozai, and you have the pleasure of learning the craft of fire bending under my tutelage.  In order to master fire bending, one must learn to empower their emotions to feul the Jing (energy) throughout their body.  Many fire benders use Anger and Fear, some have success with Grief and Pain, while a powerful minority are able to access fire through Love.  Regardless of the path, all fire benders must be able to access their emotions with aggressive passion in order to complete my training.';
+
+const airIntro = 'I am Monk Heather. I am a member of the Order of the White Lotus and its most senior warrior. I will be your airbending mentor guiding you through a series of quests that will determine your level of mastery with airbending. Air is the element of freedom and the key to unlocking its potential is flexibility. To master airbending one must be adept at being aware of flow. Finding and following the path of least resistance is critical. Air Nomads are first and foremost pacifists and almost purely defensive. We only use our abilities to harm as an absolute last resort. Perceiving, reasoning and flexibility are core skills you will need to complete your training.';
+
 const waterQuests = [waterOne, waterTwo, waterThree];
+const earthQuests = [earthOne, earthTwo, earthThree];
 const fireQuests = [fireOne, fireTwo, fireThree];
 const airQuests = [airOne, airTwo, airThree];
 
 const allQuests = {
     waterQuests: [waterIntro, waterQuests],
-    earthQuests: earthQuests,
-    fireQuests: fireQuests,
-    airQuests: airQuests
+    earthQuests: [earthIntro, earthQuests],
+    fireQuests: [fireIntro, fireQuests],
+    airQuests: [airIntro, airQuests]
 };
 export default allQuests;
