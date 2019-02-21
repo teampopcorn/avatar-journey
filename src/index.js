@@ -12,7 +12,7 @@ playerForm.addEventListener('submit', function(event) {
         masteredElements:[playerFormData.get('element')],
         score: 0,
         incompleteQuests: {
-            waterQuests: ['water one', 'water two', 'water three'],
+            waterQuests: ['Sparring Tournament', 'Ambush', 'Kiyoshi on Fire'],
             earthQuests: ['earth one', 'earth two', 'earth three'],
             fireQuests: ['fire one', 'fire two', 'fire three'],
             airQuests: ['air one', 'air two', 'air three']
