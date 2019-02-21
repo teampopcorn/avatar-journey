@@ -26,7 +26,7 @@ button {
     font-family: Herculanum, sans-serif;
     background: rgb(0,0,0,0);
     color: wheat;
-    transition: background .6s linear;
+    transition: background .3s linear;
     transition: color .6s linear;
 
 }
@@ -40,12 +40,32 @@ button:hover {
     padding: 1rem;
 }
 #container {
-    text-align: center;
+    justify-content: center;
     border: 6px outset wheat;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 150px 150px;
+    grid-auto-rows: 150px;
+    text-align: center;
+    margin: 30px 250px; 
+    padding: 20px;
+}
+.air {
+    grid-column-start: 1;
+}
+.water {
+    grid-column-start: 2;
+}
+.earth {
+    grid-column-start: 1;
+}
+.fire {
+    grid-column-start: 2;
 }
 legend {
+    margin-top: 30px;
+    margin-left: 200px;
+    margin-right: 200px;
     color: wheat;    
     display: inline-block;
     padding: .5rem;
@@ -54,9 +74,19 @@ legend {
     border: 2px outset wheat;
 }
 
-.elements {
+.radios {
     visibility: hidden;
     display: block;
     position: absolute;
+    
+}
+.elements {
+    transition: box-shadow .3s linear;
+}
+.elements:hover {
+    box-shadow: 3px 3px 1px silver, -3px -3px 1px silver;  
 }
 
+.elements:active {
+    box-shadow: 3px 3px 1px wheat, -3px -3px 1px wheat;
+}

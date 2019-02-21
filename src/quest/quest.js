@@ -47,7 +47,7 @@ for(let i = 0; i < currentQuest.questChoices.length; i++) {
 
     questOptions.appendChild(choiceLabel);
     choiceLabel.textContent = currentQuest.questChoices[i].choiceDescription;
-    choiceLabel.appendChild(choiceInput);
+    choiceLabel.prepend(choiceInput);
 }
 
 // creat submit button
