@@ -10,6 +10,8 @@ const search = window.location.search;
 const searchParams = new URLSearchParams(search);
 const elementToFind = searchParams.get('element');
 
+const mapHeader = document.getElementById('map-header');
+mapHeader.textContent = elementToFind;
 const elementIntro = document.getElementById('element-intro');
 elementIntro.textContent = questList[elementToFind + 'Quests'][0];
 
