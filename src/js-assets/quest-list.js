@@ -129,44 +129,62 @@ const fireOne = {
             choiceDescription: 'You manipulate your Fear',
             choicePoints: 1,
             choiceResult: 'You enter a meditative trance, perusing through your memories when you are overwhelmed by a feeling of deep panic.  You remember distorted sounds, gasping for breath, and being dragged along a river bed by flood waters. In a desparate attempt to force the unwanted memories away you begin to shout; after several strenuous minutes a new strength begins to surge through you.  You feel like you have strong-armed control of your past fears and easily focus on the bead of oil in the brazier.  With a simple, savage thrust of your palm, a well contained fire leaps to life burning warmly.  You see a look of approval an respect on Marty\'s face.'
+        },
+        {
+            choiceName: 'option 3',
+            choiceDescription: 'You choose memories of Love',
+            choicePoints: 3,
+            choiceResult: 'Your soul is bursting with love for your companions, you lock eyes with Marty defiantly and begin to search your soul for that deep human connection that you crave. Through your meditation, you remember watching a group of children as you made your way through the Fire Nation capital.  The 4 children chased each other around and pointed out imaginary foes and sights that only the young can imagine, their exuberant action fuels your love for all of the people in this continent and your concentration focuses on the bead of oil. You reach out and touch the edge of the brazier, a thin trail of fire snakes down from your outstretched finger and alights the oil.  Surprisingly the fire stays small and contained, despite your expectations of oil and fire.  Marty seems thoroughly impressed, but he chides you for not being able to stoke the flames of your passion.'
         }
     ]
 };
 
 const fireTwo = {
-    questTitle: 'fire two',
-    questDescription: 'You try to bend fire...Again',
+    questTitle: 'Volcanic Eruption',
+    questDescription: 'In the middle of training one morning, the ground begins to rumble.  Marty rushes to a lookout point at the NE corner of the royal grounds, with you close on his heels.  Your run slows to a dazed walk as you see fire and molten rock spewing from the mountains on the North side of the city.  Your eyes are quickly drawn to a thick, languid lavaflow creeping towards a cluster of homes and business.  Marty gathers a group of master benders to control the flow of the eruption, but glances over to you. "Well young Avatar...I think now is a good time to test your skills, how should these master benders be put to use?"',
     questChoices: [
         {
             choiceName: 'option 1',
-            choiceDescription: 'Good',
+            choiceDescription: 'Protect Citizens: create a large system of channels by actively bending the lava through the streets.',
             choicePoints: 3,
-            choiceResult: 'You did good, once more'
+            choiceResult: 'The citizens are all grateful, and they will come to appreciate the new layout of the city.  Old roadways were transformed into bending twisting paths of frozen lava-flows and the villages are a source of constant tourism to appreciate the accidental beauty created by the newest Avatar.'
         },
         {
             choiceName: 'option 2',
-            choiceDescription: 'Bad',
+            choiceDescription: 'Stop the Volcano: Send the cadre into the mountains to seal the lava flow at its source.',
             choicePoints: 1,
-            choiceResult: 'You did bad....still'
+            choiceResult: 'This practice is initially seen as a stroke of genius, but Mother Earth resists being controlled.  After 20 years, a series of volcanic eruptions destroyes dozens of villages and causes irreparable damages to the Fire Nation capital.'
+        },
+        {
+            choiceName: 'option 3',
+            choiceDescription: 'Adapt Environment: Send the benders to divert the flow "upstream", spread the lava over large areas.',
+            choicePoints: 5,
+            choiceResult: 'This tactic creates new farmland rich with volcanic soil. The nearby villages are able to generate an abundance of crops for the region, providing a trade surplus over the next decade.'
         }
     ]
 };
 
 const fireThree = {
-    questTitle: 'fire three',
-    questDescription: 'You bend fire?',
+    questTitle: 'Barbarian Pillaging',
+    questDescription: 'A group of nomad barbarians, led by Astrid the Great, have overtaken a small village and Astrid boldly claims to be the new warlord of the region. Several dozen refugess have made their way to the Fire Nation Capital and beg you to negotiate with the warlords.',
     questChoices: [
         {
             choiceName: 'option 1',
-            choiceDescription: 'Good',
+            choiceDescription: 'Challenge Astrid to a deul',
             choicePoints: 3,
-            choiceResult: 'Yes'
+            choiceResult: 'Every one gathers to watch the spectacle of an Avatar\'s duel. The Barbarian leader is not able to stand up to your superior mastery of bending, but you notice looks of disapproval and anger in Astrid\'s followers.  You are able to stave off the hostage situation, but you feel like this group may grow stronger and more secretive in the future.'
         },
         {
             choiceName: 'option 2',
-            choiceDescription: 'Bad',
+            choiceDescription: 'Set a meeting for negotiations',
             choicePoints: 1,
-            choiceResult: 'No'
+            choiceResult: 'During the negotiations, the rebels attack the your soldiers and the hostage civilians, there are many deaths on both sides of the skirmish.  You are able to escape, but this band of barbarians is going to cause more trouble.'
+        },
+        {
+            choiceName: 'option 2',
+            choiceDescription: 'Strike with a tactical team at midnight',
+            choicePoints: 5,
+            choiceResult: 'Avatar takes a tactical team in to cause a diversion and slay the leader while the army comes in at daybreak to clean up the rest of the rebels. There were no enemy survivors and few civilian casualties.'
         }
     ]
 };
