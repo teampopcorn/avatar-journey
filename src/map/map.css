@@ -34,7 +34,10 @@ header {
 img {
   width: 75px;
 }
-
+section {
+  border: 3px outset wheat;
+  padding: 5px;
+}
 a {
   display: block;
   text-decoration: none;
