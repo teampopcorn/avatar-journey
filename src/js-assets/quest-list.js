@@ -115,14 +115,14 @@ const earthThree = {
 
 
 const fireOne = {
-    questTitle: 'fire one',
-    questDescription: 'You try to bend fire',
+    questTitle: 'Introduction to Fire Bending',
+    questDescription: 'You approach a large shallow brazier, and notice a small drop of oil beaded at the center.  Marty stands across from you, his eyes flat and penetrating, a small smirk tugging at the corner of his mouth. "Your task is simple, Avatar.  Access your Jing, create a spark, and maintain the ensuing blaze to the best of your ability.  There is enough oil here for a master bender to maintain a week long fire, similarly apprentice benders often walk away from this challenge wearing ashes instead of clothing.  Summon a memory filled with passion, and feel the desire of the fire within you."',
     questChoices: [
         {
             choiceName: 'option 1',
-            choiceDescription: 'Good',
-            choicePoints: 3,
-            choiceResult: 'You did good'
+            choiceDescription: 'Choose a memory of Anger',
+            choicePoints: 5,
+            choiceResult: 'You immediately conjure thoughts of the corruption present in your current world. A heat blossoms in your chest and you feel is spread through your limbs, the instant you focus on the oil a blaze blasts forth from the brazier and you feel an intest heat waft through your core.  Marty smiles around the pillar of flame.'
         },
         {
             choiceName: 'option 2',
