@@ -1,18 +1,18 @@
 const waterOne = {
-    questTitle: 'water one',
-    questDescription: 'You try to bend water',
+    questTitle: 'Sparring Tournament',
+    questDescription: 'Master Tommy takes you and your fellow pupils to an open field, far outside the boundaries of the village. "You will all be sparring against each other today. I\'ve brought you all out here so that you can go all out," announced Master Tommy. "The winner of our little tournament today will only have to go through all the advanced water bending forms ten times tomorrow. Good luck." You make it to the second to last round before you were soundly defeated. You\'re victorious opponent exclaims, "Y\'know I expected the Avatar to be better, since you\'ve only learned water bending like a thousand times, what a loser!"',
     questChoices: [
         {
             choiceName: 'option 1',
-            choiceDescription: 'Good',
+            choiceDescription: 'You challenge your opponent to a rematch. They\'ve just disrespected the Avatar and that is unacceptable!',
             choicePoints: 3,
-            choiceResult: 'You did good'
+            choiceResult: 'Master Tommy denies your request for a rematch at first, but grants it at your insistence and you were able to defeat them! The Avatar\'s honor was successfully defended!'
         },
         {
             choiceName: 'option 2',
-            choiceDescription: 'Bad',
+            choiceDescription: 'You brush off the comment. You know that you\'ll master water bending soon enough.',
             choicePoints: 1,
-            choiceResult: 'You did bad'
+            choiceResult: 'Master Tommy denies your request for a rematch at first, but grants it at your insistence and you were able to defeat them! The Avatar\'s honor was successfully defended! did bad'
         }
     ]
 };
