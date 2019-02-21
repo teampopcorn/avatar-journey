@@ -126,9 +126,9 @@ const fireOne = {
         },
         {
             choiceName: 'option 2',
-            choiceDescription: 'Bad',
+            choiceDescription: 'You manipulate your Fear',
             choicePoints: 1,
-            choiceResult: 'You did bad'
+            choiceResult: 'You enter a meditative trance, perusing through your memories when you are overwhelmed by a feeling of deep panic.  You remember distorted sounds, gasping for breath, and being dragged along a river bed by flood waters. In a desparate attempt to force the unwanted memories away you begin to shout; after several strenuous minutes a new strength begins to surge through you.  You feel like you have strong-armed control of your past fears and easily focus on the bead of oil in the brazier.  With a simple, savage thrust of your palm, a well contained fire leaps to life burning warmly.  You see a look of approval an respect on Marty\'s face.'
         }
     ]
 };
