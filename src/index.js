@@ -14,7 +14,7 @@ playerForm.addEventListener('submit', function(event) {
         incompleteQuests: {
             waterQuests: ['Sparring Tournament', 'Ambush', 'Kiyoshi on Fire'],
             earthQuests: ['earth one', 'earth two', 'earth three'],
-            fireQuests: ['fire one', 'fire two', 'fire three'],
+            fireQuests: ['Introduction to Fire Bending', 'Volcanic Eruption', 'Barbarian Pillaging'],
             airQuests: ['air one', 'air two', 'air three']
         },
         element: makeCycle(playerFormData.get('element'))
