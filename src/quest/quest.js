@@ -17,19 +17,23 @@ const searchParams = new URLSearchParams(searchURL);
 const questTitleToFind = searchParams.get('quest');
 let elementToFind = searchParams.get('element');
 
+
 const mapElement = document.getElementById('quest-element');
 mapElement.href = './src/elements-css/' + elementToFind + '.css';
 
 // Setting current quest and creating for loop
 let currentQuest = null;
-for(let i = 0; i < allQuests[elementToFind + 'Quests'].length; i++) {
-    const questTitle = allQuests[elementToFind + 'Quests'][i].questTitle;
+for(let i = 0; i < allQuests[elementToFind + 'Quests'][1].length; i++) {
+    const questTitle = allQuests[elementToFind + 'Quests'][1][i].questTitle;
     // Defining current quest
     if(questTitle === questTitleToFind) {
-        currentQuest = allQuests[elementToFind + 'Quests'][i];
+        currentQuest = allQuests[elementToFind + 'Quests'][1][i];
         break;
     }
 }
+
+const questTitle = document.getElementById('quest-title');
+questTitle.textContent = currentQuest.questTitle;
 
 // add quest description to page
 const descriptionP = document.createElement('p');

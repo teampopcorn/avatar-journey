@@ -1,4 +1,6 @@
 import userDisplay from '../js-assets/user-display.js';
+import questList from '../js-assets/quest-list.js';
+
 // pulls player object from localStorage
 const json = window.localStorage.getItem('player');
 const player = JSON.parse(json);
@@ -7,6 +9,9 @@ const player = JSON.parse(json);
 const search = window.location.search;
 const searchParams = new URLSearchParams(search);
 const elementToFind = searchParams.get('element');
+
+const elementIntro = document.getElementById('element-intro');
+elementIntro.textContent = questList[elementToFind + 'Quests'][0];
 
 const mapElement = document.getElementById('map-element');
 mapElement.href = './src/elements-css/' + elementToFind + '.css';

@@ -14,8 +14,8 @@ playerForm.addEventListener('submit', function(event) {
         incompleteQuests: {
             waterQuests: ['Sparring Tournament', 'Ambush', 'Kiyoshi on Fire'],
             earthQuests: ['Values', 'Philosophies', 'Battle Tactics'],
-            fireQuests: ['fire one', 'fire two', 'fire three'],
-            airQuests: ['air one', 'air two', 'air three']
+            fireQuests: ['Introduction to Fire Bending', 'Volcanic Eruption', 'Barbarian Pillaging'],
+            airQuests: ['Bending Air', 'Stop Rising Rebellion Army', 'Confrontation with a Hurricane -- Ego']
         },
         element: makeCycle(playerFormData.get('element'))
     };

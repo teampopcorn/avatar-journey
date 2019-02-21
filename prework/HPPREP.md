@@ -8,7 +8,7 @@ Jumping into the air from very high places has always been a thing for Heather .
 ***
 ### Air Nomad Introduction
 
-I am *--word for mentor--* Heather. I am a member of the Order of the White Lotus and its most senior warrior. I will be your airbending mentor guiding you through a series of quests that will determine your level of mastery with airbending. Air is the element of freedom and the key to unlocking its potential is flexibility. To master airbending one must be adept at being aware of flow. Finding and following the path of least resistance is critical. Air Nomads are first and foremost pacifists and almost purely defensive. We only use our abilities to harm as an absolute last resort. Perceiving, reasoning and flexibility are core skills you will need to complete your training.
+I am Monk Heather. I am a member of the Order of the White Lotus and its most senior warrior. I will be your airbending mentor guiding you through a series of quests that will determine your level of mastery with airbending. Air is the element of freedom and the key to unlocking its potential is flexibility. To master airbending one must be adept at being aware of flow. Finding and following the path of least resistance is critical. Air Nomads are first and foremost pacifists and almost purely defensive. We only use our abilities to harm as an absolute last resort. Perceiving, reasoning and flexibility are core skills you will need to complete your training.
 
 Air Nomad Attributes
 * Pacifism
@@ -26,7 +26,7 @@ It is your second week of training and you have been working on conjuring a cont
 
 * You are ready. You feel confident. You quickly conjure a flow and push with both hands. You knock down the entire wall and all of its rocks. You jump up and down, silly with the feeling of power you have as Heather stands looking at you ... arms folded, head cocked, one eyebrow raised.
 
-* You take your time. You sink into a meditative place, conjure a very controlled flow of air around your body. At just the right moment you flick a finger and a small burst of air zings across to delicately knock one rock off the wall. Somewhat anticlimatic, but just the right use of force and amount. Not too much, not too little.
+* You take your time. You sink into a meditative place, conjure a very controlled flow of air around your body. At just the right moment you flick a finger and a small burst of air zings across to delicately knock one rock off the wall. Somewhat anticlimactic, but just the right use of force and amount. Not too much, not too little.
 
 ### Stop Rising Rebellion Army
 
