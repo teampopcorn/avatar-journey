@@ -1,7 +1,7 @@
 # Avatar Prework
 
 ## About Me
-  Code bender-in-training. I have a Bachelor's in Biochemistry and Biophysics. I love learning about the nuances and subtleties in all aspects of life cause it gives me a better picture of how this world works. I enjoy programming because it has the nuances and logic that I like, and I am able to have more control over it (compared to biochemistry). As for my hobbies, I really enjoy playing piano, non-running sports, and anime!
+  Code bender-in-training. I relate to water bending because I value adaptability and open-mindedness. I have a Bachelor's in Biochemistry and Biophysics, and I love learning about the nuances and subtleties in all aspects of life cause it makes the world a more interesting place for me. I enjoy programming because it has the nuances and logic that I like, and I am able to have more control over it (compared to biochemistry). As for my hobbies, I really enjoy playing piano, non-running physical activities, and anime!
 
 ## Creative Space (Quest generation)
   *Basic shell for quest directions
@@ -38,7 +38,7 @@
       * You divert course and chase after the arsonists. If you don't catch them now, then they'll never be brought to justice!
       + Result: After chasing them for awhile, you begin to realize that you won't be able to catch up to them. You give up the pursuit and return to Kiyoshi Island only to find that it has been almost completely burned down. You do your best to help rebuild the village as much as you can, but the week ends and you have to leave. 
 
-    3. In an Instant
+    3. Ambush
       On the way back to your igloo from water bending training, your are suddenly surrounded by a group of masked water benders. They all begin to attack you with projectile balls of ice.
 
       * You stop the ice balls and launch a counter attack on each assailant.
