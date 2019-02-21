@@ -56,58 +56,58 @@ const waterThree = {
 };
 
 const earthOne = {
-    questTitle: 'earth one',
-    questDescription: 'You try to bend earth',
+    questTitle: 'Values',
+    questDescription: 'What do you value most?',
     questChoices: [
         {
             choiceName: 'option 1',
-            choiceDescription: 'Good',
+            choiceDescription: 'Willpower',
             choicePoints: 3,
-            choiceResult: 'You did good'
+            choiceResult: 'Grat job'
         },
         {
             choiceName: 'option 2',
-            choiceDescription: 'Bad',
+            choiceDescription: 'Freedom',
             choicePoints: 1,
-            choiceResult: 'You did bad'
+            choiceResult: 'Not the way of the Earth Kingdom... You must imbody our spirit.'
         }
     ]
 };
 
 const earthTwo = {
-    questTitle: 'earth two',
-    questDescription: 'You try to bend earth...Again',
+    questTitle: 'Philosophies',
+    questDescription: 'Which of the following philosophies is most your own?',
     questChoices: [
         {
             choiceName: 'option 1',
-            choiceDescription: 'Good',
+            choiceDescription: 'If at first you do not succeed, try again.',
             choicePoints: 3,
-            choiceResult: 'You did good, once more'
+            choiceResult: 'Stupendous job your in a roll'
         },
         {
             choiceName: 'option 2',
-            choiceDescription: 'Bad',
+            choiceDescription: 'Just go with the flow.',
             choicePoints: 1,
-            choiceResult: 'You did bad....still'
+            choiceResult: 'No no no, in the Earth Kingdom we do not acceot thing we do not want and go with the flow young human'
         }
     ]
 };
 
 const earthThree = {
-    questTitle: 'earth three',
-    questDescription: 'You bend earth?',
+    questTitle: 'Battle Tactics',
+    questDescription: 'What is your battle tactic?',
     questChoices: [
         {
             choiceName: 'option 1',
-            choiceDescription: 'Good',
+            choiceDescription: 'Balance both defense and attack',
             choicePoints: 3,
-            choiceResult: 'Yes'
+            choiceResult: 'Your training is coming around you did great keep up the good work!'
         },
         {
             choiceName: 'option 2',
-            choiceDescription: 'Bad',
+            choiceDescription: 'Attack from behind',
             choicePoints: 1,
-            choiceResult: 'No'
+            choiceResult: 'your walking backwards,think is this the way of the Earth kingdom!'
         }
     ]
 };

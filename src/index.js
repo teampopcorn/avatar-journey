@@ -13,7 +13,7 @@ playerForm.addEventListener('submit', function(event) {
         score: 0,
         incompleteQuests: {
             waterQuests: ['Sparring Tournament', 'Ambush', 'Kiyoshi on Fire'],
-            earthQuests: ['earth one', 'earth two', 'earth three'],
+            earthQuests: ['Values', 'Philosophies', 'Battle Tactics'],
             fireQuests: ['fire one', 'fire two', 'fire three'],
             airQuests: ['air one', 'air two', 'air three']
         },
