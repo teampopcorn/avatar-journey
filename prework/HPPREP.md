@@ -26,7 +26,7 @@ It is your second week of training and you have been working on conjuring a cont
 
 * You are ready. You feel confident. You quickly conjure a flow and push with both hands. You knock down the entire wall and all of its rocks. You jump up and down, silly with the feeling of power you have as Heather stands looking at you ... arms folded, head cocked, one eyebrow raised.
 
-* You take your time. You sink into a meditative place, conjure a very controlled flow of air around your body. At just the right moment you flick a finger and a small burst of air zings across to delicately knock one rock off the wall. Somewhat anticlimatic, but just the right use of force and amount. Not too much, not too little.
+* You take your time. You sink into a meditative place, conjure a very controlled flow of air around your body. At just the right moment you flick a finger and a small burst of air zings across to delicately knock one rock off the wall. Somewhat anticlimactic, but just the right use of force and amount. Not too much, not too little.
 
 ### Stop Rising Rebellion Army
 

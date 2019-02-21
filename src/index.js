@@ -15,7 +15,7 @@ playerForm.addEventListener('submit', function(event) {
             waterQuests: ['Sparring Tournament', 'Ambush', 'Kiyoshi on Fire'],
             earthQuests: ['earth one', 'earth two', 'earth three'],
             fireQuests: ['fire one', 'fire two', 'fire three'],
-            airQuests: ['air one', 'air two', 'air three']
+            airQuests: ['Bending Air', 'Stop Rising Rebellion Army', 'Confrontation with a Hurricane -- Ego']
         },
         element: makeCycle(playerFormData.get('element'))
     };
