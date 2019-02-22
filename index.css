@@ -1,32 +1,49 @@
-/* black -> green #373331  #605a56 #80ac7b #e8eaa1*/
 @font-face {
     font-family: Herculanum;
     src: url('./assets/herculanum.ttf');
 }
+
 html {
     background: url('./assets/avatar10.png') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-   }
+}
+
+#name-input {
+    text-align: center;
+    margin-top: 1.5rem;
+    border: 2px inset wheat;
+    font-size: 20px;
+    padding: 0.5rem;
+    font-family: Herculanum, sans-serif;
+    background: rgb(0,0,0,0.5);
+    color: wheat;
+}
+
 #wrap-box {
     display: grid;
     justify-content: center;
+    margin: 0 200px;
     border: 5px outset wheat;
-    padding-bottom: 20%;
     background: rgba(55,51,49,0.3);
 }
+
 body {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
     text-align: center;
-    /* background-color:  #373331;  */
     color: wheat;
     font-size: 30px;
     font-family: Herculanum;
-
 }
+
 h1 {
     font-family: Herculanum, sans-serif;
+    margin: 20px 0;
+    width: 1000px;
     color: wheat;
     font-size: 75px;
     border: 6px outset wheat;
@@ -34,6 +51,7 @@ h1 {
     text-shadow: 1px 2px 1px #80ac7b;
     padding: 10px;
 }
+
 button {
     border: 2px outset wheat;
     font-size: 20px;
@@ -43,17 +61,25 @@ button {
     color: wheat;
     transition: background .3s linear;
     transition: color .6s linear;
-
 }
+
 button:hover {
     background: wheat;
     color: #373331;
 }
 
-#player-form {
-    margin: 2rem;
-    padding: 1rem;
+p {
+    margin-bottom: 0;
 }
+
+footer {
+    padding: 15px;
+}
+
+#player-form {
+    margin: 1rem;
+}
+
 #container {
     justify-content: center;
     border: 6px outset wheat;
@@ -66,18 +92,23 @@ button:hover {
     padding: 20px;
     background: rgba(55,51,49,0.75);
 }
+
 .air {
     grid-column-start: 1;
 }
+
 .water {
     grid-column-start: 2;
 }
+
 .earth {
     grid-column-start: 1;
 }
+
 .fire {
     grid-column-start: 2;
 }
+
 legend {
     margin-top: 30px;
     margin-left: 200px;
@@ -97,13 +128,11 @@ legend {
     position: absolute;
     
 }
+
 .elements {
     transition: box-shadow .3s linear;
 }
-.elements:hover {
-    box-shadow: 3px 3px 1px silver, -3px -3px 1px silver;  
-}
 
-.elements:active {
-    box-shadow: 3px 3px 1px wheat, -3px -3px 1px wheat;
+.elements:hover {
+    box-shadow: 0 0 20px white;  
 }
