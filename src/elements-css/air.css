@@ -5,3 +5,39 @@ html {
   -o-background-size: cover;
   background-size: cover;
 }
+
+header {
+  background-color: rgba(25, 106, 160, 0.75);
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  border: 2px outset wheat;
+  font-size: 35px;
+  padding: .5rem;
+  font-family: Herculanum, sans-serif;
+  background: rgba(25, 106, 160, 0.75);
+  color: wheat;
+  transition: background .3s, color .6s linear;
+  margin: 1rem;
+}
+
+a:hover {
+  background: wheat;
+  color: rgba(25, 106, 160);
+}
+
+#element-intro {
+  background: rgba(25, 106, 160, 0.75);
+  margin: 10px;
+}
+
+#quest-description {
+  background: rgba(25, 106, 160, 0.75);
+  margin: 10px;
+}
+
+label {
+  background: rgba(25, 106, 160, 0.75);
+}

@@ -5,6 +5,7 @@ html {
   -o-background-size: cover;
   background-size: cover;
 }
+
 header {
   background-color: rgba(44, 95, 197, 0.5);
 }
@@ -21,15 +22,22 @@ a {
   transition: background .3s, color .6s linear;
   margin: 1rem;
 }
+
 a:hover {
   background: wheat;
   color: rgba(44, 95, 197);
 }
+
 #element-intro {
   background: rgba(44, 95, 197, 0.75);
   margin: 10px;
 }
+
 #quest-description {
   background: rgba(44, 95, 197, 0.75);
   margin: 10px;
+}
+
+label {
+  background: rgba(44, 95, 197, 0.5);
 }

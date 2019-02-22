@@ -16,5 +16,10 @@ function tally(score) {
     }
 }
 
-resultSection.textContent = tally(player.score);
-
+// resultSection.textContent = tally(player.score);
+const resultArray = tally(player.score);
+for(let i = 0; i < resultArray.length; i++) {
+    const resultP = document.createElement('p');
+    resultP.textContent = resultArray[i];
+    resultSection.appendChild(resultP);
+}

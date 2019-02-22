@@ -82,6 +82,7 @@ questOptions.addEventListener('submit', function(event) {
         const mastered = player.element.shift();
         player.masteredElements.push(mastered);
         elementToFind = player.element[0];
+        mapLink.href = 'map.html?element=' + elementToFind;
     }
     
     // Check if elements array is empty > then go to results.html

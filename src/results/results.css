@@ -2,17 +2,19 @@
   font-family: Herculanum;
   src: url('../../assets/herculanum.ttf');
 }
+
 * {
   margin: 0;
   padding: 0;
 }
+
 html {
   background: url('../../assets/avatar11.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
- }
+}
 
 body {
   text-align: center;
@@ -21,14 +23,17 @@ body {
   font-size: 30px;
   font-family: Herculanum;
 }
+
 h1 {
   font-family: Herculanum, sans-serif;
   color: wheat;
   font-size: 75px;
 }
+
 header {
   display: flex;
   justify-content: space-between;
+  background: rgba(55,51,49,0.5);
   border: 6px outset wheat;
   text-shadow: 1px 2px 1px #80ac7b;
   padding: 20px;
@@ -39,6 +44,7 @@ header {
   display: flex;
   justify-content: flex-end;
 }
+
 img {
   width: 75px;
 }
@@ -50,13 +56,25 @@ a {
   font-size: 35px;
   padding: .5rem;
   font-family: Herculanum, sans-serif;
-  background: rgb(0,0,0,0);
+  background: rgb(55,51,49,0.75);
   color: wheat;
   transition: background .3s linear;
   transition: color .6s linear;
   margin: 1rem;
 }
+
 a:hover {
   background: wheat;
   color: #373331;
+}
+
+#results {
+  background: rgb(55,51,49,0.75);
+  border: 2px outset wheat;
+  padding: .5rem;
+  margin: 1rem;
+}
+
+p {
+  margin: 15px;
 }
