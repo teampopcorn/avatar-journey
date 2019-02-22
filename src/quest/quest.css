@@ -2,21 +2,25 @@
   font-family: Herculanum;
   src: url('../../assets/herculanum.ttf');
 }
+
 * {
   margin: 0;
   padding: 0;
 }
+
 body {
   text-align: center;
   color: wheat;
   font-size: 30px;
   font-family: Herculanum;
 }
+
 h1 {
   font-family: Herculanum, sans-serif;
   color: wheat;
   font-size: 75px;
 }
+
 header {
   display: flex;
   justify-content: space-between;
@@ -30,11 +34,10 @@ header {
   display: flex;
   justify-content: flex-end;
 }
+
 img {
   width: 75px;
 }
-
-
 
 label {
   border: 6px outset wheat;
@@ -43,10 +46,12 @@ label {
   display: block;
   padding: 20px;
 }
+
 input {
   display: inline-block;
   margin: 20px;
 }
+
 button {
   border: 2px outset wheat;
   font-size: 20px;
@@ -56,8 +61,8 @@ button {
   color: wheat;
   transition: background .3s linear;
   transition: color .6s linear;
-
 }
+
 button:hover {
   background: wheat;
   color: #373331;
@@ -76,6 +81,7 @@ a {
   transition: color .6s linear;
   margin: 1rem;
 }
+
 a:hover {
   background: wheat;
   color: #373331;
