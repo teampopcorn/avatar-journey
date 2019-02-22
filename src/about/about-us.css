@@ -2,12 +2,43 @@
     font-family: Herculanum;
     src: url('./assets/herculanum.ttf');
 }
+
 html {
     background: url('../../assets/avatar10.png') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+body {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    text-align: center;
+    color: wheat;
+    font-size: 30px;
+    font-family: Herculanum;
+}
+
+h1 {
+    font-size: 75px;
+    border: 6px outset wheat;
+    background: rgba(55, 51, 49, 0.75);
+    text-shadow: 1px 2px 1px #80ac7b;
+    padding: 10px;
+    width: 800px;
+    margin: 10px;
+}
+
+section {
+    border: 5px outset wheat;
+    margin: 20px 0;
+    padding: 0 20px;
+    font-size: 23px;
+    text-align: justify;
+    min-height: 275px;
+    max-width: 1000px;
 }
 
 img {
@@ -21,14 +52,6 @@ img {
 
 .left {
     float: left;
-}
-
-section {
-    border: 5px outset wheat;
-    margin: 20px;
-    padding: 0 20px;
-    font-size: 23px;
-    text-align: justify;
 }
 
 h2 {
@@ -54,37 +77,4 @@ h2 {
     background: rgba(237, 40, 18, 0.75);
 }
 
-body {
-    text-align: center;
-    /* background-color:  #373331;  */
-    color: wheat;
-    font-size: 30px;
-    font-family: Herculanum;
 
-}
-
-h1 {
-    font-family: Herculanum, sans-serif;
-    color: wheat;
-    font-size: 75px;
-    border: 6px outset wheat;
-    background: rgba(55,51,49,0.75);
-    text-shadow: 1px 2px 1px #80ac7b;
-    padding: 10px;
-}
-
-button {
-    border: 2px outset wheat;
-    font-size: 20px;
-    padding: 0.5rem;
-    font-family: Herculanum, sans-serif;
-    background: rgb(0,0,0,0.5);
-    color: wheat;
-    transition: background .3s linear;
-    transition: color .6s linear;
-}
-
-button:hover {
-    background: wheat;
-    color: #373331;
-}
