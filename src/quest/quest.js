@@ -17,11 +17,11 @@ const searchParams = new URLSearchParams(searchURL);
 const questTitleToFind = searchParams.get('quest');
 let elementToFind = searchParams.get('element');
 
-
+// Set CSS to current element
 const mapElement = document.getElementById('quest-element');
 mapElement.href = './src/elements-css/' + elementToFind + '.css';
 
-// Setting current quest and creating for loop
+// For loop sets current quest the user chose to be displayed on the page
 let currentQuest = null;
 for(let i = 0; i < allQuests[elementToFind + 'Quests'][1].length; i++) {
     const questTitle = allQuests[elementToFind + 'Quests'][1][i].questTitle;
