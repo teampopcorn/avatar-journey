@@ -5,7 +5,8 @@ const player = JSON.parse(json);
 const resultSection = document.getElementById('results');
 
 userDisplay(player);
-
+// So glad you TDD'd this function. Well done! Bugs love
+// to cluster around branching logic.
 function tally(score) {
     if(score > 21) {
         return playerResult.good(player);

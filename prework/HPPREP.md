@@ -1,3 +1,5 @@
+<!-- These markdown files are great prep but please make sure to remove
+work artifacts from your app as they become unnecessary. -->
 # Heather's Avatar Prework
 
 ## About Heather
