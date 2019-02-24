@@ -1,5 +1,15 @@
 import allQuests from '../js-assets/quest-list.js';
 import userDisplay from '../js-assets/user-display.js';
+// In general, work towards converting your code comments (these are great) 
+// into code by wrapping the code in named and called functions or
+// assigning it to a named variable. This will also expose and remove
+// excess code duplication.
+
+
+// For example, this action on 15 and 16 is performed three
+// different times in different .js files in your app.
+// It would be easy to call it just as you've named it: 
+// const player = getPlayerObjectFromStorage();
 
 // Get player object from localStorage
 const json = window.localStorage.getItem('player');
@@ -15,12 +25,16 @@ const mapLink = document.getElementById('map-link');
 const searchURL = window.location.search;
 const searchParams = new URLSearchParams(searchURL);
 const questTitleToFind = searchParams.get('quest');
+// Something to consider; its important to distinguish your domain concepts from
+// language keywords; 'element' is both html and your domain;
+// perhaps specify 'natureElement' or 'avatarElement' or the like.
 let elementToFind = searchParams.get('element');
 
 // Set CSS to current element
 const mapElement = document.getElementById('quest-element');
 mapElement.href = './src/elements-css/' + elementToFind + '.css';
 
+// Another good opportunity for TDD
 // For loop sets current quest the user chose to be displayed on the page
 let currentQuest = null;
 for(let i = 0; i < allQuests[elementToFind + 'Quests'][1].length; i++) {

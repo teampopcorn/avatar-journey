@@ -1,3 +1,8 @@
+// There is some code duplication here - I recommend compressing this all
+// into one function, for example playerResult, that takes good/neutral/bad result and
+// a player name, and separates instead the resultParts into different
+// objects, goodObject, neutralObject, and badObject.
+// Duplication of data is less problematic than duplication of logic.
 
 function goodResult(player) {
     const resultParts = {

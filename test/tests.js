@@ -1,6 +1,8 @@
 import './tally/tally.test.js';
 const test = QUnit.test;
 
+// this is now in index.js; please call it from there once you
+// have successfully TDD'd and moved your function into your app.
 function makeCycle(startElement) {
     switch(startElement) {
         case 'air': 
